@@ -5,7 +5,7 @@ metadata:
   namespace: roboshop
   labels:
     project: roboshop
-    component:  catalogue
+    component: catalogue
     tier: backend
 data:
   MONGO: "true"
@@ -21,7 +21,7 @@ metadata:
     project: roboshop
     component:  catalogue
     tier: backend
-sepc:
+spec:
   replicas: 1
   selector:
     matchLables:

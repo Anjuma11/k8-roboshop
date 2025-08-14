@@ -53,7 +53,7 @@ metadata:
     component: catalogue
     tier: backend
 spec:
-  selectors:
+  selector:
     project: roboshop
     component: catalogue
     tier: backend

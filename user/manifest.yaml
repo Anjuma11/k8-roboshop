@@ -11,7 +11,7 @@ data:
   MONGO_URL: "mongodb://mongodb:27017/users" 
   REDIS_URL: "redis://redis:6379" 
   MONGO: "true"
-  
+---  
 
 apiVersion: apps/v1
 kind: Deployment
@@ -42,7 +42,7 @@ sepc:
         envFrom:
         - configMapRef:
             name: user
-
+---
 
 apiVersion: v1
 kind: Service

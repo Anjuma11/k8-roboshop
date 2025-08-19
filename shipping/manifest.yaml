@@ -10,7 +10,7 @@ metadata:
 data:
   CART_ENDPOINT: "cart:8080" 
   DB_HOST: "mysql"
-  
+---  
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -40,7 +40,7 @@ sepc:
       envFrom:
       - configMapRef:
           name: shipping
-
+---
 
 apiVersion: v1
 kind: Service

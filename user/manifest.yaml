@@ -22,7 +22,7 @@ metadata:
     project: roboshop
     component:  user
     tier: backend
-sepc:
+spec:
   replicas: 1
   selector:
     matchLables:

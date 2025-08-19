@@ -81,7 +81,7 @@ metadata:
     project: roboshop
     component: frontend
     tier: web
-sepc:
+spec:
   replicas: 1
   selector:
     matchLables:
@@ -123,7 +123,7 @@ metadata:
     tier: web
 spec:
   type: LoadBalancer
-  selectors:
+  selector:
     project: roboshop
     component: frontend
     tier: web

@@ -55,7 +55,7 @@ sepc:
       - name: payment
         image:  anjuma11/payment:v1
         envFrom:
-        - ConfigMapRef:
+        - configMapRef:
             name: payment
         - secretRef:
             name: payment

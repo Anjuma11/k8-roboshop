@@ -1,5 +1,5 @@
 apiVersion: v1
-kind: Secrete
+kind: Secret
 metadata:
   name: mysql
   labels:
@@ -59,5 +59,5 @@ spec:
   ports:
   - protocol: tcp
     port: 3306
-    target-port: 3306
+    targetPort: 3306
   

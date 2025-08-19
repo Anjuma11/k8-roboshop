@@ -84,7 +84,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       project:  roboshop
       component: frontend
       tier: web
@@ -94,22 +94,22 @@ spec:
         project: roboshop
         component: frontend
         tier: web
-  spec:
-    containers:
-    - name: frontend
-      image:  anjuma11/frontend:v1
-      volumeMounts:
-      - name: nginx-conf
-        mountPath: /etc/nginx/nginx.conf
-        subPath: nginx.conf
-        readOnly: true
-    volumes:
-      - name: nginx-conf
-        configMap:
-          name: nginx-conf
-          items:
-            - keys: nginx.conf
-              path: nginx.conf
+    spec:
+      containers:
+      - name: frontend
+        image:  anjuma11/frontend:v1
+        volumeMounts:
+        - name: nginx-conf
+          mountPath: /etc/nginx/nginx.conf
+          subPath: nginx.conf
+          readOnly: true
+      volumes:
+        - name: nginx-conf
+          configMap:
+            name: nginx-conf
+            items:
+              - keys: nginx.conf
+                path: nginx.conf
 
 ---
 apiVersion: v1

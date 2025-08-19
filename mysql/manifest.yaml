@@ -57,7 +57,7 @@ spec:
     component: mysql
     tier: database
   ports:
-  - protocol: tcp
+  - protocol: TCP
     port: 3306
     targetPort: 3306
   

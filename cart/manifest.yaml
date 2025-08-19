@@ -29,10 +29,10 @@ spec:
     tier: backend
   template:
     metadata:
-    labels: 
-      project: roboshop
-      component: cart
-      tier: backend
+      labels: 
+        project: roboshop
+        component: cart
+        tier: backend
     spec:
       containers:
       - name: cart

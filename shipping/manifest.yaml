@@ -23,7 +23,7 @@ metadata:
 sepc:
   replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       project:  roboshop
       component: shipping
       tier: backend

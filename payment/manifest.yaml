@@ -13,7 +13,7 @@ data:
   USER_HOST: "user"
   USER_PORT: "8080"
   AMQP_HOST: "rabbitmq"
-
+---
 apiVersion: v1
 kind: Secret
 metadata:
@@ -27,7 +27,7 @@ type: Opaque
 data:
   AMQP_USER: "cm9ib3Nob3A="
   AMQP_PASS: "cm9ib3Nob3AxMjM="
-
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -40,7 +40,7 @@ metadata:
 sepc:
   replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       project:  roboshop
       component: payment
       tier: backend
@@ -60,7 +60,7 @@ sepc:
         - secretRef:
             name: payment
 
-
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -71,7 +71,7 @@ metadata:
     component: payment
     tier: backend
 spec:
-  selectors:
+  selector:
     project: roboshop
     component: payment
     tier: backend

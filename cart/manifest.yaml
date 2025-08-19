@@ -23,7 +23,7 @@ metadata:
     tier: backend
 spec:
   selector:
-  matchLables:
+  matchLabels:
     project: roboshop
     component: cart
     tier: backend

@@ -20,7 +20,7 @@ metadata:
     project: roboshop
     component:  shipping
     tier: backend
-sepc:
+spec:
   replicas: 1
   selector:
     matchLabels:
@@ -52,7 +52,7 @@ metadata:
     component: shipping
     tier: backend
 spec:
-  selectors:
+  selector:
     project: roboshop
     component: shipping
     tier: backend
